@@ -3,7 +3,9 @@ package com.env.jobportalbackend.services;
 import com.env.jobportalbackend.user.controller.UserController;
 import com.env.jobportalbackend.user.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserTestExecutor {
 
     @Autowired
