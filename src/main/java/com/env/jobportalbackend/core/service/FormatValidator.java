@@ -1,8 +1,10 @@
 package com.env.jobportalbackend.core.service;
 
+import org.springframework.stereotype.Component;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Component
 public class FormatValidator {
 
     public boolean isValidPhoneNo(String phone)

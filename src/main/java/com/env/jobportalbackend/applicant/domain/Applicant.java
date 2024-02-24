@@ -1,6 +1,6 @@
-package com.env.jobportalbackend.user.model;
+package com.env.jobportalbackend.applicant.domain;
 
-public class User {
+public class Applicant {
 
     String id;
     String name;
