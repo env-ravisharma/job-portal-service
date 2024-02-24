@@ -5,7 +5,7 @@ public class Recruiter {
     String id;
     String companyName;
     String officialEmail;
-    String phoneNo;
+    String contactNumber;
 
     public String getId() {
         return id;
@@ -31,11 +31,11 @@ public class Recruiter {
         this.officialEmail = officialEmail;
     }
 
-    public String getPhoneNo() {
-        return phoneNo;
+    public String getContactNumber() {
+        return contactNumber;
     }
 
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
     }
 }
