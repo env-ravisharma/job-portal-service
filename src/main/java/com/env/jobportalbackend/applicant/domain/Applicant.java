@@ -5,7 +5,7 @@ public class Applicant {
     String id;
     String name;
     String contactNo;
-    String email;
+    String emailAddress;
 
     public String getId() {
         return id;
@@ -31,11 +31,11 @@ public class Applicant {
         this.contactNo = contactNo;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 }

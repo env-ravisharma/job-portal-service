@@ -22,6 +22,9 @@ public class ApplicantService {
         if(!formatValidator.isValidPhoneNo(applicant.getContactNo())) {
             throw new RuntimeException("Please enter correct phone number");
         }
+        if(!formatValidator.isValidEmailAddress(applicant.getEmailAddress())) {
+            throw new RuntimeException("Please enter correct email address");
+        }
         //TODO write code to validate user
     }
 

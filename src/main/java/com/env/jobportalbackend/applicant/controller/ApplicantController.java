@@ -13,8 +13,7 @@ public class ApplicantController {
 
     public Applicant registerApplicant(Applicant applicant)
     {
-        applicantService.registerUser(applicant);
-        return applicant;
+        return applicantService.registerUser(applicant);
     }
 
 }

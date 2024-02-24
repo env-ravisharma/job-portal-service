@@ -21,7 +21,7 @@ public class ApplicantTestExecutor {
         Applicant applicant = new Applicant();
         applicant.setName("Ravi Sharma");
         applicant.setContactNo("8051697206");
-        applicant.setEmail("ravisharma@xyz.com");
+        applicant.setEmailAddress("ravisharma@xyz.com");
         applicantController.registerApplicant(applicant);
     }
 
