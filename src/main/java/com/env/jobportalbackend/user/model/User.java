@@ -4,7 +4,7 @@ public class User {
 
     String id;
     String name;
-    String phone;
+    String contactNo;
     String email;
 
     public String getId() {
@@ -23,12 +23,12 @@ public class User {
         this.name = name;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getContactNo() {
+        return contactNo;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
     }
 
     public String getEmail() {

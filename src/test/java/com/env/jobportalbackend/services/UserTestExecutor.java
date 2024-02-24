@@ -20,7 +20,7 @@ public class UserTestExecutor {
     {
         User user = new User();
         user.setName("Ravi Sharma");
-        user.setPhone("8051697206");
+        user.setContactNo("8051697206");
         user.setEmail("ravisharma@xyz.com");
         userController.registerUser(user);
     }
