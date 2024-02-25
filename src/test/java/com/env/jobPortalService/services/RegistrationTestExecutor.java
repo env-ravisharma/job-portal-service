@@ -1,8 +1,8 @@
 package com.env.jobPortalService.services;
 
 import com.env.jobPortalService.registration.controller.RegistrationController;
-import com.env.jobPortalService.registration.domain.Applicant;
-import com.env.jobPortalService.registration.domain.Recruiter;
+import com.env.jobPortalService.registration.model.Applicant;
+import com.env.jobPortalService.registration.model.Recruiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

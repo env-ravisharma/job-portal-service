@@ -1,4 +1,4 @@
-package com.env.jobPortalService.registration.domain;
+package com.env.jobPortalService.registration.model;
 
 import com.env.jobPortalService.core.domain.Entity;
 
