@@ -4,7 +4,9 @@ import com.env.jobPortalService.registration.domain.Applicant;
 import com.env.jobPortalService.registration.domain.Recruiter;
 import com.env.jobPortalService.registration.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class RegistrationController {
 
     @Autowired
