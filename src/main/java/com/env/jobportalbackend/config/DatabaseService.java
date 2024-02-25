@@ -5,11 +5,8 @@ import java.sql.DriverManager;
 
 public class DatabaseService {
 
-    public Connection getJDBConnection() throws Exception {
-        String url = "jdbc:postgresql://localhost:5432/practice_database";
-        String uname = "postgres";
-        String pass = "root";
-        return DriverManager.getConnection(url, uname, pass);
+    public Connection getH2DBConnection() throws Exception {
+        return DriverManager.getConnection("jdbc:h2:mem:test");
     }
 
 }
