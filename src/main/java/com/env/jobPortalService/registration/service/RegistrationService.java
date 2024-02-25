@@ -6,6 +6,7 @@ import com.env.jobPortalService.registration.model.Recruiter;
 import com.env.jobPortalService.registration.repository.RegistrationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class RegistrationService {
@@ -23,7 +24,7 @@ public class RegistrationService {
     }
 
     private void validate(Recruiter recruiter) {
-        if(!formatValidator.isValidPhoneNo(recruiter.getContactNo())){
+        if(!formatValidator.isValidPhoneNo(recruiter.getContactNumber())){
             throw new RuntimeException("Please enter correct contact number.");
         }if(!formatValidator.isValidEmailAddress(recruiter.getEmailAddress())){
             throw new RuntimeException("Please enter correct email address.");
@@ -39,7 +40,7 @@ public class RegistrationService {
     }
 
     private void validate(Applicant applicant) {
-        if(!formatValidator.isValidPhoneNo(applicant.getContactNo())) {
+        if(!formatValidator.isValidPhoneNo(applicant.getContactNumber())) {
             throw new RuntimeException("Please enter correct phone number");
         }
         if(!formatValidator.isValidEmailAddress(applicant.getEmailAddress())) {
@@ -48,4 +49,7 @@ public class RegistrationService {
         //TODO write code to validate user
     }
 
+    public List<Applicant> getApplicants() {
+        return registrationRepository.getApplicants();
+    }
 }

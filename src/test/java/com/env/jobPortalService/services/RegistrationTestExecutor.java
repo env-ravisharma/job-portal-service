@@ -25,13 +25,13 @@ public class RegistrationTestExecutor {
 
         recruiter = new Recruiter();
         recruiter.setName("XYZ Company");
-        recruiter.setContactNo("8123456789");
+        recruiter.setContactNumber("8123456789");
         recruiter.setEmailAddress("ravisharma@xyzcompany.com");
         existingRecruiter = registrationController.registerRecruiter(recruiter);
 
         //TODO need write code to fetch existingRecruiter from h2 database
         assert recruiter.getName().equals(existingRecruiter.getName());
-        assert recruiter.getContactNo().equals(existingRecruiter.getContactNo());
+        assert recruiter.getContactNumber().equals(existingRecruiter.getContactNumber());
         assert recruiter.getEmailAddress().equals(existingRecruiter.getEmailAddress());
 
     }
@@ -40,7 +40,7 @@ public class RegistrationTestExecutor {
     {
         Applicant applicant = new Applicant();
         applicant.setName("Ravi Sharma");
-        applicant.setContactNo("8051697206");
+        applicant.setContactNumber("8051697206");
         applicant.setEmailAddress("ravisharma@xyz.com");
         registrationController.registerApplicant(applicant);
     }

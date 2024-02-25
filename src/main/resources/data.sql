@@ -1,0 +1,1 @@
+INSERT INTO applicant (id,name,email_address,contact_number) VALUES ('1','H2 Applicant','h2@xyz.com','8012345678');

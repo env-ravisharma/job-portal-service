@@ -5,6 +5,7 @@ import com.env.jobPortalService.registration.model.Recruiter;
 import com.env.jobPortalService.registration.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import java.util.List;
 
 @Controller
 public class RegistrationController {
@@ -20,6 +21,11 @@ public class RegistrationController {
     public Applicant registerApplicant(Applicant applicant)
     {
         return registrationService.registerApplicant(applicant);
+    }
+
+    public List<Applicant> getApplicants()
+    {
+        return registrationService.getApplicants();
     }
 
 }

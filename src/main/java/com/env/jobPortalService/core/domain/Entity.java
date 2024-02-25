@@ -7,7 +7,7 @@ public class Entity {
 
     String id;
     String name;
-    String contactNo;
+    String contactNumber;
     String emailAddress;
 
     public String getId() {
@@ -26,12 +26,12 @@ public class Entity {
         this.name = name;
     }
 
-    public String getContactNo() {
-        return contactNo;
+    public String getContactNumber() {
+        return contactNumber;
     }
 
-    public void setContactNo(String contactNo) {
-        this.contactNo = contactNo;
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
     }
 
     public String getEmailAddress() {
@@ -42,4 +42,13 @@ public class Entity {
         this.emailAddress = emailAddress;
     }
 
+    @Override
+    public String toString() {
+        return "Entity{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", contactNumber='" + contactNumber + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                '}';
+    }
 }
