@@ -1,7 +1,7 @@
-package com.env.jobportalbackend.services;
+package com.env.jobPortalService.services;
 
-import com.env.jobportalbackend.recruiter.controller.RecruiterController;
-import com.env.jobportalbackend.recruiter.domain.Recruiter;
+import com.env.jobPortalService.recruiter.controller.RecruiterController;
+import com.env.jobPortalService.recruiter.domain.Recruiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

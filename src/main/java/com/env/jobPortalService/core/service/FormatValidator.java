@@ -1,4 +1,4 @@
-package com.env.jobportalbackend.core.service;
+package com.env.jobPortalService.core.service;
 
 import org.springframework.stereotype.Component;
 import java.util.regex.Matcher;

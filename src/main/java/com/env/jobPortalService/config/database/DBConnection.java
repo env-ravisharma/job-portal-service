@@ -1,4 +1,4 @@
-package com.env.jobportalbackend.config.database;
+package com.env.jobPortalService.config.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,7 +1,7 @@
-package com.env.jobportalbackend.recruiter.service;
+package com.env.jobPortalService.recruiter.service;
 
-import com.env.jobportalbackend.core.service.FormatValidator;
-import com.env.jobportalbackend.recruiter.domain.Recruiter;
+import com.env.jobPortalService.core.service.FormatValidator;
+import com.env.jobPortalService.recruiter.domain.Recruiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

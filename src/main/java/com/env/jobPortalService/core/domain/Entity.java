@@ -1,4 +1,4 @@
-package com.env.jobportalbackend.core.domain;
+package com.env.jobPortalService.core.domain;
 
 public class Entity {
 

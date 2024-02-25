@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.env</groupId>
-	<artifactId>jobportal-backend</artifactId>
+	<artifactId>job-portal-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jobportal</name>
 	<description>A Job portal application connecting job seekers and employers.</description>

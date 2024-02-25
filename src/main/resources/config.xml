@@ -3,11 +3,19 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="dbConnection" class="com.env.jobportalbackend.config.database.DBConnection">
+    <bean name="dbConnection" class="com.env.jobPortalService.config.database.DBConnection" primary="true">
         <constructor-arg index="0" value="jdbc:h2:mem:test"/>
         <constructor-arg index="1" value=""/>
         <constructor-arg index="2" value=""/>
     </bean>
+
+    <!--
+    <bean name="dbConnection" class="com.env.jobPortalService.config.database.DBConnection">
+        <constructor-arg index="0" value="jdbc:postgresql://localhost:5432/job_portal"/>
+        <constructor-arg index="1" value="postgres"/>
+        <constructor-arg index="2" value="root"/>
+    </bean>
+    -->
 
 </beans>
 

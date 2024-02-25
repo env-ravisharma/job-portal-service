@@ -1,7 +1,7 @@
-package com.env.jobportalbackend.applicant.controller;
+package com.env.jobPortalService.applicant.controller;
 
-import com.env.jobportalbackend.applicant.domain.Applicant;
-import com.env.jobportalbackend.applicant.service.ApplicantService;
+import com.env.jobPortalService.applicant.domain.Applicant;
+import com.env.jobPortalService.applicant.service.ApplicantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
