@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="dbConnection" class="com.env.jobportalbackend.config.database.DBConnection">
+        <property name="url" value="jdbc:h2:mem:test"></property>
+        <property name="userName" value=""></property>
+        <property name="password" value=""></property>
+    </bean>
+
+</beans>
+
