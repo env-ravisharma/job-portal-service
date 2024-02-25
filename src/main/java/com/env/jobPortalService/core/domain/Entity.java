@@ -1,5 +1,8 @@
 package com.env.jobPortalService.core.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Entity {
 
     String id;
