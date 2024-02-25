@@ -1,7 +1,6 @@
 package com.env.jobPortalService;
 
-import com.env.jobPortalService.services.ApplicantTestExecutor;
-import com.env.jobPortalService.services.RecruiterTestExecutor;
+import com.env.jobPortalService.services.RegistrationTestExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Test;
@@ -10,15 +9,11 @@ import org.junit.jupiter.api.Test;
 class JobPortalApplicationTests {
 
 	@Autowired
-	RecruiterTestExecutor recruiterTestExecutor;
-
-	@Autowired
-	ApplicantTestExecutor applicantTestExecutor;
+    RegistrationTestExecutor registrationTestExecutor;
 
 	@Test
 	void contextLoads() {
-		recruiterTestExecutor.executeTests();
-		applicantTestExecutor.executeTests();
+		registrationTestExecutor.executeTests();
 	}
 
 }
