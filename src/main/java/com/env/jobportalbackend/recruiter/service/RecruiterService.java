@@ -18,9 +18,9 @@ public class RecruiterService {
     }
 
     private void validate(Recruiter recruiter) {
-        if(!formatValidator.isValidPhoneNo(recruiter.getContactNumber())){
+        if(!formatValidator.isValidPhoneNo(recruiter.getContactNo())){
             throw new RuntimeException("Please enter correct contact number.");
-        }if(!formatValidator.isValidEmailAddress(recruiter.getOfficialEmail())){
+        }if(!formatValidator.isValidEmailAddress(recruiter.getEmailAddress())){
             throw new RuntimeException("Please enter correct email address.");
         }
     }

@@ -22,15 +22,15 @@ public class RecruiterTestExecutor {
         Recruiter existingRecruiter;
 
         recruiter = new Recruiter();
-        recruiter.setCompanyName("XYZ Company");
-        recruiter.setContactNumber("8123456789");
-        recruiter.setOfficialEmail("ravisharma@xyzcompany.com");
+        recruiter.setName("XYZ Company");
+        recruiter.setContactNo("8123456789");
+        recruiter.setEmailAddress("ravisharma@xyzcompany.com");
         existingRecruiter = recruiterController.registerRecruiter(recruiter);
 
         //TODO need write code to fetch existingRecruiter from h2 database
-        assert recruiter.getCompanyName().equals(existingRecruiter.getCompanyName());
-        assert recruiter.getContactNumber().equals(existingRecruiter.getContactNumber());
-        assert recruiter.getOfficialEmail().equals(existingRecruiter.getOfficialEmail());
+        assert recruiter.getName().equals(existingRecruiter.getName());
+        assert recruiter.getContactNo().equals(existingRecruiter.getContactNo());
+        assert recruiter.getEmailAddress().equals(existingRecruiter.getEmailAddress());
 
     }
 
