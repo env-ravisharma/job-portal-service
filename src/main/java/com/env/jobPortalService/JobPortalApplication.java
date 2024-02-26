@@ -1,31 +1,24 @@
 package com.env.jobPortalService;
 
-import com.env.jobPortalService.registration.model.Applicant;
-import com.env.jobPortalService.registration.service.RegistrationService;
+import org.apache.catalina.Context;
+import org.apache.catalina.startup.Tomcat;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import java.util.List;
 
 @SpringBootApplication
 public class JobPortalApplication {
 
-	public static void main(String[] args)
-	{
-		ApplicationContext applicationContext = SpringApplication.run(JobPortalApplication.class, args);
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(JobPortalApplication.class, args);
 
-		Applicant applicant = applicationContext.getBean(Applicant.class);
-		applicant.setId("1");
-		applicant.setName("Applicant1");
-		applicant.setContactNumber("9076436888");
-		applicant.setEmailAddress("abc@zyx.com");
+		Tomcat tomcat = new Tomcat();
 
-		RegistrationService registrationService = applicationContext.getBean(RegistrationService.class);
+		Context context = tomcat.addContext("", null);
+		Tomcat.addServlet(context, "HelloServlet", new HelloServlet());
+		context.addServletMappingDecoded("/hello", "HelloServlet");
 
-		registrationService.registerApplicant(applicant);
-
-		List<Applicant> applicants = registrationService.getApplicants();
-		applicants.forEach(a -> System.out.println(a.toString()));
+		tomcat.start();
+		tomcat.getServer().await();
 	}
 
 }
