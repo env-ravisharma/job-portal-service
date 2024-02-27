@@ -51,4 +51,5 @@ public class Entity {
                 ", emailAddress='" + emailAddress + '\'' +
                 '}';
     }
+
 }

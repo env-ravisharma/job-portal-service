@@ -3,19 +3,11 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean name="dbConnection" class="com.env.jobPortalService.config.DBConnection">-->
-<!--        <constructor-arg index="0" value="jdbc:h2:mem:test"/>-->
-<!--        <constructor-arg index="1" value=""/>-->
-<!--        <constructor-arg index="2" value=""/>-->
+<!--    <bean name="refObjectName" class="Claas path from source root">-->
+<!--        <constructor-arg index="0" value="fistArgument"/>-->
+<!--        <constructor-arg index="1" value="secondArgument"/>-->
+<!--        <constructor-arg index="2" value="thirdArgument"/>-->
 <!--    </bean>-->
-
-    <!--
-    <bean name="dbConnection" class="com.env.jobPortalService.config.DBConnection">
-        <constructor-arg index="0" value="jdbc:postgresql://localhost:5432/job_portal"/>
-        <constructor-arg index="1" value="postgres"/>
-        <constructor-arg index="2" value="root"/>
-    </bean>
-    -->
 
 </beans>
 
